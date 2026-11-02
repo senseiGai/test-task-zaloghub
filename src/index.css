@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #3A1018;
+  --foreground: #ECEAE4;
+
+  --card: #1E2B25;
+  --card-foreground: #ECEAE4;
+
+  --popover: #1E2B25;
+  --popover-foreground: #ECEAE4;
+
+  --primary: #C49A6C;
+  --primary-foreground: #16201B;
+
+  --secondary: #26362E;
+  --secondary-foreground: #ECEAE4;
+
+  --muted: #26362E;
+  --muted-foreground: #A3B1A8;
+
+  --accent: #C49A6C;
+  --accent-foreground: #16201B;
+
+  --destructive: #DC2626;
+  --destructive-foreground: #ECEAE4;
+
+  --border: rgba(236, 234, 228, 0.14);
+  --input: rgba(236, 234, 228, 0.14);
+  --ring: #C49A6C;
+
+  --radius: 0.75rem;
+
+  --camel: #C49A6C;
+  --ink: #16201B;
+
+  --font-sans: "Golos Text", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+@theme inline {
+  --font-sans: "Golos Text", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-camel: var(--camel);
+  --color-ink: var(--ink);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-sans);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+}
