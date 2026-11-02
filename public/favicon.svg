@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Subtle Rounded Rectangle (10% radius) -->
+  <rect width="512" height="512" rx="48" fill="#C49A6C" />
+  
+  <!-- Crisp Checkmark -->
+  <path d="M 148 268 L 226 346 L 364 174" fill="none" stroke="#3A1018" stroke-width="50" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
